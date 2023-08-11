@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photograph | Page</title>
+    <!-- CSS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(function(){
+            
+        });
+    </script>
+    <style>
+        .border{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        button{
+        cursor: pointer;
+        outline: 0;
+        display: inline-block;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: center;
+        background-color: transparent;
+        border: 1px solid transparent;
+        padding: 6px 12px;
+        font-size: 1rem;
+        border-radius: .25rem;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        color: grey;
+        border-color: grey;
+
+        :hover {
+            color: #fff;
+            background-color: #0d6efd;
+            border-color: #0d6efd;
+        }
+        }
+
+        .half-height-card {
+        height: 50%;
+        }
+        
+        .half-height-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the image covers the entire space while maintaining aspect ratio */
+        }
+
+                
+        h1{
+            font-size: 12.89px;
+        }
+        h2{
+            font-size: 9.00px;
+        }
+        h3{
+            font-size: 6.89px;
+        }
+        .a{
+            font-size: 12px;
+        }
+        .bg{
+            background-image: url(images/ken\ igop.jpg);
+        }
+        #container {
+        position: relative;
+        text-align: center;
+        color: white;
+        }
+
+        #container1 {
+        position: relative;
+        text-align: center;
+        color: white;
+        }
+
+        .centered {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-0%, -70%);
+        }
+
+        .centeredBottom{
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        }
+
+        .centeredReal {
+        position: absolute;
+        top:40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        }
+
+
+        .centeredSearch{
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        }
+
+        .card .card-img-top-1{
+            max-height: 80%;
+            width: auto;
+        }
+
+        h5{
+            font-size: 60px;
+        }
+    </style>
+</head>
+<body class="bg-dark">
+    <!-- START OF THE CODE -->
+    <!-- navbar -->
+    <div class="container-fluid bg-dark">
+        <div class="row">
+            <div class="col-12 navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
+                <a href="#" class="navbar-brand">
+                    <img src="images/2.png" alt="Avatar Logo" style="width: 60px; height: 60px"  class="rounded-pill">
+                </a>
+                <div class="col-8 col-sm-2">
+                    <h3 style="color: orange;">Ken Photographs</h3>
+                    <h2 class="text-white">Photographs by Memento Mori</h2>
+                    <h1 class="text-white">Ken Patrick Garcia's Photographs</h1>
+                </div>
+                <div class="col-12 col-sm-7 text-center ">
+                    <!-- Links -->
+                    <ul class="navbar-nav mx-auto float-lg-end" >
+                        <li class="nav-item">
+                        <a class="nav-link a" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link a" href="#">Popular Artist</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link a" href="#">Popular Categories</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link a" href="#">Testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link a" href="#">About Us & Our Paintings</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link a" href="#">Help</a>
+                        </li>
+                    </u l>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+        
+    <!-- under navbar -->
+    <!-- flexbox na lng gamitin sa susunod -->
+    <div class="container-fluid">
+        <div class="row bg-warning text-white text-center" >
+            <div class="col-sm-1"></div>
+            <div class="col-sm-2 align-content-center a p-1" style="background-color: orange;">Contact Us</div>
+            <div class="col-sm-2 a align-content-center p-1">
+                +1-888-4178278
+            </div>
+            <div class="col-sm-2 a"></div>
+            <div class="col-sm-2 a p-1">
+                Recently Viewed
+            </div>
+            <div class="col-sm-1 a p-1">
+                Sign In
+            </div>
+            <div class="col-sm-1 a p-1">
+                Cart (0)
+            </div>
+        </div>
+
+        <div class="row bg-dark" >
+            <div class="col-12 ratio ratio-16x9" style="height: 315px;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/lW508pBeih8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                <input type="text" name="query" placeholder="Search..." class="centeredSearch" style="height: 20px; width: 150px;">
+            </div>
+        </div>
+
+        <div class="row bg-dark text-white">
+            <div class="text-center mt-5 px-5">
+                <h1 class="display-5">Most Popular Artists</h3>
+                <h6 style="font-size: 15px;">Have your own handmade oil painting reproduction from any famous artist...</h6>
+            </div>
+        </div>
+
+        <!-- using column -->
+        <div class="row bg-dark justify-content-center">
+            <div class="col-8 col-sm-3 col-md-2 g-1">
+                <div class="card my-4 text-center bg-dark">
+                    <img src="images/3.png" class="img-fluid" alt="Card image" class="card-img-top" style="height:230px;">
+                        <h1 class="text-white mt-2"><b>William-Adolphe Bouguereau</b></h1>
+                        <h3 class="text-white"><b class="text-danger">Art Movements</b>: Academic Classicism</h3>
+                </div>
+            </div>
+
+            <div class="col-8 col-sm-3 col-md-2 g-1">
+                <div class="card my-4 text-center bg-dark">
+                    <img src="images/boss1blurred.png" class="img-fluid" alt="Card image" class="card-img-top" style="height:230px;">
+                        <h1 class="text-white mt-2"><b>Vincent Van Gogh</b></h1>
+                        <h3 class="text-white"><b class="text-danger">Art Movements</b>: Post Impressionism</h3>
+                </div>
+            </div>
+
+            <div class="col-8 col-sm-3 col-md-2 g-1">
+                <div class="card my-4 text-center bg-dark">
+                    <img src="images/2.png" class="img-fluid" alt="Card image" class="card-img-top" style="height:230px;">
+                        <h1 class="text-white mt-2"><b>Claude Oscar Monet</b></h1>
+                        <h3 class="text-white"><b class="text-danger">Art Movements</b>: Impressionism</h3>
+                </div>
+            </div>
+
+            <div class="col-8 col-sm-3 col-md-2 g-1">
+                <div class="card my-4 text-center bg-dark">
+                    <img src="images/img1.jpg" class="img-fluid" alt="Card image" class="card-img-top" style="height:230px;">
+                        <h1 class="text-white mt-2"><b>Leonardo Da Vinci</b></h1>
+                        <h3 class="text-white"><b class="text-danger">Art Movements</b>: Reinassance High</h3>
+                </div>
+            </div>
+
+        </div>
+    
+    </div>
+
+    <!-- most popular art movemnts picture na mahaba -->
+    <div id="container">
+        <img src="images/ken igop.jpg" alt="" class="w-100">
+            <h6><b class="text-primary centered" style="font-size: 100%;top: 30%;">Most Popular</b></h6>
+            <h6><b class="text-warning centered" style="font-size: 100%;top: 40%;">Art Movements</b></h6>
+ 
+        <div class="centeredBottom container-fluid" >
+            <div class="mt-4 card-deck px-5 d-flex justify-content-md-center">
+                <div class=" card my-4 text-center bg-dark border border-white border-5 mx-1 rounded-0" style="width: 15rem; height: 10rem; ">
+                    <img src="images/4.png" alt="Card image" class="img-fluid card-img-top card-img-top-1" >
+                        <h1 class="text-danger mt-2 "><b>Romanticism</b></h1>
+                </div>
+
+                <div class=" card my-4 text-center bg-dark border border-white border-5 mx-1 rounded-0" style="width: 15rem; height: 10rem;">
+                    <img src="images/4.png" alt="Card image" class="img-fluid card-img-top card-img-top-1" >
+                        <h1 class="text-danger mt-2"><b>Baroque</b></h1>
+                </div>
+
+                <div class="card my-4 text-center bg-dark border border-white border-5 mx-1 rounded-0" style="width: 15rem; height: 10rem;">
+                    <img src="images/4.png" alt="Card image" class="img-fluid card-img-top card-img-top-1" >
+                        <h1 class="text-danger mt-2"><b>Impressionism</b></h1>
+                </div>
+
+                <div class="card my-4 text-center bg-dark border border-white border-5 mx-1 rounded-0" style="width: 15rem; height: 10rem;">
+                    <img src="images/4.png" alt="Card image" class="img-fluid card-img-top card-img-top-1" >
+                        <h1 class="text-danger mt-2" style="font-size: 65%;"><b>Academic Classicism</b></h1>
+                </div>
+
+            </div>
+        </div>
+
+        
+
+    </div>
+
+    <!-- mga pictures ulit -->
+    <div class="container-fluid">
+        <div class="row bg-dark">
+            <div class="col-12 py-5 ">
+                <div class="py-4 d-flex card-deck px-5 justify-content-center">
+                    <div class="card my-4 text-center bg-dark border border-white border-5 mt-5 rounded-0 mx-1" style="width: 30.5rem; height: 10rem;">
+                        <img src="images/4.png" alt="Card image" class="img-fluid card-img-top card-img-top-1" >
+                            <h1 class="text-danger mt-2"><b>Neo-Classical</b></h1>
+                    </div>
+    
+                    <div class="card my-4 text-center bg-dark border border-white border-5 mt-5 rounded-0 mx-1" style="width: 15rem; height: 10rem;">
+                        <img src="images/4.png" alt="Card image" class="img-fluid card-img-top card-img-top-1" >
+                            <h1 class="text-danger mt-2"><b>Realism</b></h1>
+                    </div>
+    
+                    <div class="card my-4 text-center bg-dark border border-white border-5 mt-5 rounded-0 mx-1" style="width: 15rem; height: 10rem;">
+                        <img src="images/4.png" alt="Card image" class="img-fluid card-img-top card-img-top-1" >
+                            <h1 class="text-danger mt-2"><b>Rococo</b></h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 text-center mx-auto mb-5">
+                <button><a href="#" class="">Load More</a></button>
+            </div>
+                
+        </div>
+
+    </div>
+
+    <!-- most popular paintings -->
+    <div id="container1">
+        <img src="images/cover photo1.jpg" alt="" class="w-100">
+        <div class="div">
+            <h5><b class="text-white centeredReal" style="font-size: 60%;">Most Popular Paintings</b></h5>
+        </div>
+        <div>
+            <h5><b class="text-white centeredReal" style="font-size: 20%; top: 70%;">Have your own handmade oil painting reproduction from any famous painting...</b></h5>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row justify-content-center ">
+            <div class="col-6 col-sm-6 col-md-3 d-flex">
+                <div class="card my-4 text-center bg-dark border border-white border-5 mx-1 rounded-0 flex-column" >
+                    <img src="images/cropPaint2.png" alt="Card image" class="img-fluid card-img-top">
+                    <h1 class="text-danger mt-2 "><b>The Kiss</b></h1>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-3 d-flex">
+                <div class="card my-4 text-center bg-dark border border-white border-5 mx-1 rounded-0 flex-column" >
+                    <img src="images/cropPaint1.png" alt="Card image" class="img-fluid card-img-top">
+                    <h1 class="text-danger mt-2 "><b>Starry Night Over the Rhone</b></h1>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-3 d-flex">
+                <div class="card my-4 text-center bg-dark border border-white border-5 mx-1 rounded-0 flex-column" >
+                    <img src="images/stoic2.png" alt="Card image" class="img-fluid card-img-top">
+                    <h1 class="text-danger mt-2 "><b>Peacock, Hen and Cock</b></h1>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-3 d-flex">
+                <div class="card my-4 text-center bg-dark border border-white border-5 mx-1 rounded-0 flex-column" >
+                    <img src="images/stoic2.png" alt="Card image" class="img-fluid card-img-top">
+                    <h1 class="text-danger mt-2 "><b>Argenteuil (Red Boats)</b></h1>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- lower part -->
+        <div class="row just">
+            <div class="col-md-6 d-flex">
+                <div class="card my-3 text-center bg-dark border border-white border-5 mx-1 rounded-0 d-flex flex-column" style="flex-grow: 1;">
+                    <img src="images/stoic2.png" alt="Card image" class="w-50 card-img-top" >
+                    <h1 class="text-danger mt-2"><b>Morning in the Pine-tree Forest</b></h1>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3 col-sm-6 d-flex">
+                <div class="card my-3 text-center bg-dark border border-white border-5 mx-1 rounded-0 d-flex flex-column" style="flex-grow: 1;">
+                    <img src="images/stoic2.png" alt="Card image" class="img-fluid card-img-top">
+                    <h1 class="text-danger mt-2"><b>Monalisa</b></h1>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3 col-sm-6 d-flex">
+                <div class="card my-3 text-center bg-dark border border-white border-5 mx-1 rounded-0 d-flex flex-column" style="flex-grow: 1;">
+                    <img src="images/stoic2.png" alt="Card image" class="img-fluid card-img-top">
+                    <h1 class="text-danger mt-2"><b>La Grenouillere</b></h1>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <!-- button -->
+    <div class="col-12 text-center mx-auto mb-5">
+        <button><a href="#" class="">Load More</a></button>
+    </div>
+
+    <!-- subject category -->
+    <div class="container-fluid bg-black text-center">
+        <div class="col-12">
+            <div class="display-1 mt-3">Subject's Discovery</div>
+        </div>
+        <div class="col-12 d-flex">
+            <div class="border p-2 bg-white">
+                <h6>Ken Patrick Garcia</h6>
+                <button class="button bg-danger"><a href="#">Read More</a></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inline Javascript -->
+    <script>
+
+    </script>
+    <!-- END OF THE CODE -->
+</body>
+</html>

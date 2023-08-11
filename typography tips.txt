@@ -1,0 +1,13 @@
+golden ratio/GR = 1.618
+recommend font size for body - 16-18 px
+if you want a bigger font GR * size = bigger font
+if you want a smaller font GR * size = smaller font
+
+use the clamp() function
+.my-class {font-size: clamp(16px, 3vw, 22px);}
+
+minimum font size = 16px
+viewport width = 3vw
+maximum font size = 22px
+
+
