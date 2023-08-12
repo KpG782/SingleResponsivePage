@@ -1,9 +1,22 @@
 
 .label{
     font-family: 'Kanit', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
 }
+
+.oswald{
+    font-family: 'Oswald', sans-serif;
+}
+.kanit{
+    font-family: 'Kanit', sans-serif;
+}
+
+.block{
+    display: block;
+}
+
 .border{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -106,3 +119,4 @@ transform: translate(-50%, -50%);
 h5{
     font-size: 60px;
 }
+
